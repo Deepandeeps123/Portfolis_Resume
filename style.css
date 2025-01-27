@@ -1,0 +1,476 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width:370px){
+    .sbox{
+        margin: 20px;
+    }
+}
+
+
+.outer{
+    background-image: linear-gradient(to left,rgb(4, 69, 248),rgb(82, 71, 71));
+}
+
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1;
+    /* background-color: brown; */
+}
+
+.logo{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color:#00bcd4
+}
+
+
+
+.outer > h1{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: sticky;
+    /* background-color: brown; */
+}
+
+
+.inner > .nav{
+    height: 50px;
+    /* position: fixed; */
+    /* background-color: brown; */
+}
+
+
+.button{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* border-radius: 30px; */
+    /* background-color: brown; */
+}
+
+
+.button :hover{
+    background-color: aqua;
+    color: rgb(243, 5, 17);
+    box-shadow: 3px 2px 3px ;
+}
+
+#b1{
+    text-transform: capitalize;
+    text-decoration-line: none;
+}
+
+
+
+.about > h1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+
+.about > h1 ::selection{
+    color: blue;
+}
+
+
+
+.about > p{
+    height: 100px;
+    width: 100%;
+    font: 100;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-display: 10px;
+    padding: 10px 50px;
+    /* background-color: brown; */
+}
+
+
+.course{
+    height: 300px;
+    width: 600px;
+    /* background-color: brown; */
+    font: bold;
+    font-size: 10px;
+    word-spacing: 2px;
+    
+    
+}
+
+
+.inside{
+    display: flex;
+    justify-content: center;
+}
+.course > .one{
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    gap: 20px;
+    border-radius: 20px;
+}
+.course > .one:hover{
+    border: 2px dotted black;
+    border-radius: 20px;
+    background:linear-gradient(to right,red,white,orange)
+}
+.course > .two{
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    gap: 10px;
+    border-radius: 20px;
+}
+.course > .two:hover{
+    border: 2px dotted black;
+    border-radius: 20px;
+    background:linear-gradient(to right,red,white,orange)
+    
+}
+.course > .three{
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.course > .three:hover{
+    border: 2px dotted black;
+    border-radius: 20px;
+    background:linear-gradient(to right,red,white,orange)
+}
+
+
+.certificate{
+    height: 200px;
+    width: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+
+.certificate:hover{
+    background: linear-gradient(to right,red,yellow);
+}
+
+.in{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(240, 228, 228); */
+}
+
+
+
+
+@media only screen and (max-width:500px){
+    .about >p{
+        height: 200px;
+        font-size:large;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        font-display: 10px;
+        padding: 10px 10px;
+    }
+    .education{
+        height: 200px;
+        width: 80%;
+        /* background-color: brown; */
+    }
+}
+
+
+
+.project > h1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    /* background-color: brown; */
+}
+
+
+/* #bb{
+    height: 100px;
+    width: 300px;
+    background-color: brown;
+} */
+
+#btn2{
+    height: 50px;
+    width: 50px;
+    /* background-color: brown; */
+}
+
+
+.education{
+    height: 500px;
+    width: 100%;
+    /* background-color: beige; */
+}
+
+
+.education >h1{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.education{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+
+.sbox{
+    height: 100px;
+    width: 500px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    /* background-color: brown; */
+
+}
+.sbox :hover{
+    background-color: dimgray;
+}
+
+.sbox{
+    border: 2px solid ;
+    transform: all 1s ease-in 2s;
+}
+
+
+
+/* .education > .sbox{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgb(14, 241, 82);
+} */
+
+
+.sslc{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* background-color: brown; */
+}
+.hsc{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* background-color: brown; */
+}
+.degree{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* background-color: brown; */
+}
+
+.skill1{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: beige; */
+
+}
+
+.skill{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: beige; */
+
+}
+
+.sk1{
+    height: 100px;
+    width: 300px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+.sk2{
+    height: 100px;
+    width: 300px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+.sk3{
+    height: 100px;
+    width: 300px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+.sk4{
+    height: 100px;
+    width: 300px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+
+.sk1 > label :hover{
+    background-color: brown;
+    /* background-color: yellow; */
+    
+}
+
+
+#certificate{
+    height:50px;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: beige; */
+
+}
+
+
+.certificate{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+
+
+/* sidebar */
+.sidebar{
+    /* position:relative; */
+    top:0px;
+    left: -220px;
+    width: 200px;
+    height: 100px;
+    background: #151719;
+    transition: all 300ms linear;
+
+}
+
+
+
+
+
+
+
