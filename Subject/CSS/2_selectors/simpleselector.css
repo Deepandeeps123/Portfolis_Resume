@@ -1,0 +1,58 @@
+                              /* 1.Universal selector (all the line in this color)*/
+*{
+    color: red;
+}
+
+                               /* 2.tagname selector */ 
+
+/* h1{
+    color: blue;
+}
+
+
+p{
+    color: green;
+} */
+
+
+                                   /* 3.id selector (individual)*/
+
+
+/* #p1{
+    color: yellow;
+}
+
+#p2{
+    color: blue;
+}
+
+#h1{
+    color: palevioletred;
+} */
+
+/* #b1{
+    color: chocolate;
+} */
+
+/* button{
+    color: burlywood;
+} */
+
+
+
+
+                           /* 4.class name selector (h3 to connect with button using (class)(more than 2 element) */
+
+/* .container{
+    color: aqua;
+} */
+
+
+
+
+
+/* 5.Group selector */
+
+h1,h2{
+    color: rgb(16, 2, 22);
+}

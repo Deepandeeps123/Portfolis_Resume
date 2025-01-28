@@ -1,0 +1,2744 @@
+<!-- Intro Html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+    <style>
+        h1{
+            color: rgb(173, 79, 79);
+        }
+    </style>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <h1>Pratice in html and css</h1>
+    <h2 style="color: blue;">This is Heading1</h2>
+    <p>This is Paragraph</p>
+</body>
+</html>
+
+
+
+
+<!-- Intro Css -->
+
+
+p{
+    color: rgb(42, 126, 165);
+}
+
+
+
+
+
+
+<!-- Selector HTML -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div>
+        <h1>This is Heading1</h1>
+    <p id="p1">This is Paragraph1</p>
+    </div>
+
+    <div>
+        <h2 class="container">This is Heading2</h2>
+        <p class="container">This is Paragraoh2</p>
+    </div>
+
+    <div>
+        <h3>This is Heading3</h3>
+        <p id="p3">This is Paragraph3</p>
+    </div>
+
+    <div>
+        <h4>This is Heading4</h4>
+        <p id="p4">This is Paragraph4</p>
+    </div>
+
+    <div>
+        <h5>This is Heading5</h5>
+        <p>This is Paragraph5</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- selector css -->
+
+
+
+
+/* 1 */
+*{
+    color: firebrick;
+}
+
+/* 2 */
+h1{
+    color: black;
+}
+
+/* 3 */
+#p1{
+    color: black;
+}
+
+
+/* 4 */
+.container{
+    color: blue;
+}
+
+
+/* 5 */
+h3,h4{
+    color: gold;
+}
+#p3,#p4{
+    color: gold;
+}
+
+
+
+
+
+<!-- selector -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pratice.css">
+    
+</head>
+<body>
+    <h1 >This is Heading1</h1>
+    <h1 >This is Heading2</h1>
+    <h1 >This is Heading3</h1>
+</body>
+</html>
+
+
+
+
+h1,h2,h3{
+    color: deepskyblue;
+}
+
+
+
+
+<!-- combinator -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <h2>Combinator Selector</h2>
+    <div class="container">
+        <h1>This is Heading1</h1>
+        <p>This is Paragraph1</p>
+        
+        <div class="container2">
+            <h1>This is Heading2</h1>
+            <p id="para1">para-1</p>
+            <p>para-2</p>
+            <p>para-3</p>
+            <p>para-4</p>
+            <p>para-5</p>
+            <p>para-6</p>
+            
+        </div>
+    </div>
+    <div class="container3">
+        <h1>This is Heading1</h1>
+        <p>This is Paragraph1</p>
+        
+        <div class="container4">
+            
+            <p>This is Paragraph2</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+/* h1{
+    color: blue;
+} */
+
+
+/* 1.. */
+/* .container h1{
+   color: blue;
+} */
+
+
+
+
+
+/* 2.. */
+/* .container h1{
+    color: red;
+} */
+
+/* .container p{
+    color: yellow;
+} */
+
+
+/* .container > h1{
+    color: red;
+}
+
+
+.container > p{
+    color: yellow;
+}
+
+
+.container2 h1{
+    color: blueviolet;
+}
+
+
+.container2 p{
+    color :tomato
+} */
+
+
+/* .container > h1{
+    color: red;
+}
+
+
+.container2 h1{
+    color: blue;
+} */
+
+
+
+
+
+
+/* 3...... */
+
+
+/* .container2 #para1{
+    color: brown;
+}
+
+
+.container2 #para1 +p{
+    color: blue;
+}
+
+
+.container2 #para1 +p+p{
+    color: rgb(0, 255, 13);
+}
+
+
+
+.container2 #para1 +p+p+p{
+    color: rgb(145, 255, 0);
+} */
+
+
+
+
+.container   #para1 ~ p{
+    color: brown;
+}
+
+
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+<!-- Pseudo Class -->
+
+
+<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClass</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <h1>PseudoClass</h1>
+    <div class="container">
+        <h1>This is Heading1</h1>
+        <p>This is Paragraph1</p>
+        <div class="container2">
+            <h1>This is Heading2</h1>
+            <p>This is Paragraph2</p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+        <p>para-4</p>
+        <p>para-5</p>
+        <p>para-6</p>
+        <p>para-7</p>
+        <p>para-8</p>
+        <p>para-9</p>
+        <p>para-10</p>
+    </div>
+
+
+
+    <div class="container5">
+        <button>Know More</button>
+    </div>
+
+
+
+
+    <div class="container6">
+        <a href="https://www.instagram.com/accounts/login/?hl=en">Instgram</a>5;5-
+        <a href="https://www.facebook.com/">Facebook</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!--CSS -->
+
+/* .container h1{
+    color:yellow
+}
+
+
+.container > h1{
+    color: blue;
+} */
+
+
+
+/* .container h1:hover {
+    color: rgb(245, 18, 18);
+}
+
+
+
+.container > h1:hover {
+    color: blueviolet;
+} */
+/* .container > p:first-child {
+    color: blue;
+}
+
+
+.container > h1:first-child{
+    color: yellow;
+} */
+
+
+
+/* 
+.container :last-child{
+    color: violet;
+} */
+
+
+
+
+/* .container3 p:nth-child(10){
+    color: red;
+} */
+
+/* .container3 p:nth-child(2n){
+
+
+    color: red;
+} */
+
+
+
+
+/* 
+.container > h1:first-of-type{
+    color:red
+} */
+
+/* .container > p:first-of-type{
+    color: yellowgreen;
+}  */
+
+
+/* .container2 > h1:last-of-type{
+    color: rgb(237, 100, 134);
+}
+
+
+.container2 > p:last-of-type{
+    color:yellow
+} */
+
+
+
+
+/* .container5 button:active {
+    color: tomato;
+}   */
+
+
+
+/* .container5 > button:active{
+    color: red;
+}
+*/
+
+
+
+/* .container5 > button:active{
+    background-color: red;
+} */
+
+/* .container5 > button {
+    background-color: aqua;
+    color: red;
+} */
+
+
+/* button {
+    color: red;
+    background-color: aqua;
+} */
+
+
+
+/* .container5 > button:active{
+    color: brown;
+    background-color: yellow;
+} */
+
+
+
+
+.container6 a:visited{
+    color: red
+}
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+<!-- pseudoElement -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PseudoElement</title>
+   <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+   <div class="container">
+       <h1>This is Heading1</h1>
+       <p>This is paragraph1</p>
+       <div class="container2">
+           <h1>This is Heading2</h1>
+           <p>This is paragraph</p>
+       </div>
+   </div>
+   <div class="container2">
+       <ul>
+           <li>list-1</li>
+           <li>list-2</li>
+           <li>list-3</li>
+           <li>list-4</li>
+           <li>list-5</li>
+           <li>list-6</li>
+           <li>list-7</li>
+           <li>list-8</li>
+           <li>list-9</li>
+           <li>list-10</li>
+       </ul>
+   </div>
+</body>
+</html>
+
+
+
+
+
+
+
+/* 1.before */
+
+/* .container > h1::before{
+      content: '*';
+}
+
+.container > p::before{
+      content: '++';
+} */
+
+
+
+/* .container > h1::after {
+      content: '*';
+}
+
+.container >p::after{
+      content: '++';
+} */
+
+
+
+/* .container > h1::first-line{ */
+      /* font-size: 80px; */
+      /* background-color: red; */
+      /* font-family: 'Courier New', Courier, monospace; */
+      /* font-style: unset;
+      font: 100;
+      font-weight: 300; */
+/* } */
+
+
+/* .container > h1::first-letter{
+      font-size: 60px;
+      color: red;
+} */
+
+
+/* ::selection{
+      background-color: black;
+      color: green;
+} */
+
+/* .container2 >ul>li::marker{
+      color: red;
+} */
+
+/* .container2 > ul>li :nth-child(1){
+      color: red;
+} */
+
+/* .container2 >ul>li:nth-child(2n){
+      color: red;
+  } */
+
+  .container2 > ul> li:nth-child(2n)::marker{
+      color: red;
+ }
+ 
+
+
+
+
+
+ <!-- ------------------------------------------------------------------------------------ -->
+
+
+
+
+
+
+ <!-- Font Property -->
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+
+<body>
+    <a href="www.facebook.com">Facebook</a><br>
+    <a href="www.instragram.com">Instragram</a><br>
+    <a>youtube</a>
+
+        <h1>Font Property</h1>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium enim repellendus rem quaerat
+            debitis dolorum rerum voluptates quo pariatur dignissimos. Fugit reprehenderit necessitatibus quae expedita
+            quia quaerat eius id saepe aliquam amet. Quaerat veniam aperiam consequuntur inventore earum maxime, magnam
+            minima accusantium modi possimus! Voluptatum similique sapiente illum. Ea facere mollitia sunt laudantium,
+            sequi dolorem voluptates nesciunt quo architecto provident totam voluptatum excepturi, ullam cumque?
+            Corporis dicta eveniet doloremque facere culpa nesciunt nam maxime maiores laboriosam? Quae sint quo rerum
+            vel aperiam culpa minima voluptate dicta perferendis placeat ex perspiciatis, expedita quod numquam iusto
+            deleniti dignissimos atque animi? Deleniti, a.</p>
+</body>
+
+</html>
+
+
+
+/* a[href]{
+    color: red;
+} */
+
+/* a[target]
+{
+  color: aqua;
+} */
+
+
+/* #p1{
+    font-size: 40px;
+} */
+
+
+/* #p1 {
+    font-weight: bold;
+} */
+
+/* #p1{
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+
+
+#p1{
+    font-variant: small-caps      ;
+}
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------ -->
+
+
+
+
+
+
+<!-- Text Property -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quis.</p>
+        
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+/* h1 {
+    text-align: center;
+}
+.container>p{
+    text-align:center;
+} */
+
+/* .container > h1{
+    text-align: right;
+} */
+/* .container > h1{
+    text-align: end;
+} */
+
+
+
+
+/* .container >h1{
+    text-decoration: none;
+} */
+ /* .container > h1{
+    text-decoration: underline;
+ } */
+
+
+ /* .container > h1{
+    text-decoration: overline;
+ } */
+/* 
+
+ .container > h1{
+    text-decoration: line-through;
+ } */
+
+ /* .container > h1{
+    text-decoration: solid;
+ } */
+
+
+
+ /* .container > h1 {
+    text-decoration-line: none;
+ } */
+
+ /* .container > h1{
+    text-decoration-line: underline;
+ } */
+
+
+ /* .container > h1{
+    text-decoration-line: overline;
+ } */
+
+
+ /* .container > h1{
+    text-decoration-line: line-through;
+ } */
+
+
+ /* .container > h1{
+    text-decoration-line: inherit;
+ } */
+
+ /* h1{
+    text-decoration-line: line-through; 
+    text-decoration-color: blue;
+ } */
+
+ /* .container >h1 {
+    color: green;
+    text-decoration: line-through;
+    text-decoration-color:red ;
+    text-decoration-style:wavy;
+
+ } */
+
+
+
+ /* .container > h1{
+    text-indent: 50px;
+ } */
+
+
+
+ /* .container > h1{
+    text-transform: uppercase;
+ } */
+
+
+ /* .container > h1{
+    text-transform: lowercase;
+ } */
+
+
+ /* .container > h1{
+    text-transform: capitalize;
+ } */
+
+
+
+ /* .container > h1{
+    text-shadow: 5px 2px 3px black;
+ } */
+
+/* ---------------------------Space---------------------- */
+
+
+ /* .container > h1{
+    letter-spacing: 20em;
+ } */
+
+
+ /* .container > h1{
+    word-spacing: 20em;
+ } */
+
+
+ .container > h1{
+    text-indent: 30px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 20px;
+    
+ }
+
+
+
+
+
+
+
+ <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+
+
+
+
+
+ <!-- Units -->
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+/* .container > h1{
+    background-color: red;
+    height: 10mm;
+    width: 20mm
+    
+    ;
+}
+
+.container > h1{
+    background-color: red;
+    height: 10cm;
+    width: 20cm;
+}
+.container > h1{
+    background-color: red;
+    height: 50px;
+    width: 40px;
+} */
+
+
+
+
+/* .container > h1{
+    background-color: red;
+    height: 10%;
+    width: 20%;
+} */
+
+
+/* .container > h1{
+    background-color: red;
+    height: 10vw;
+    width: 20vw;
+} */
+
+
+
+.container > h1{
+    background-color: red;
+    height: 10rem;
+    width: 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- Box model , padding ,margin -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+
+<body>
+    <div class="container1">
+        <h1>Container1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates accusamus ex quibusdam explicabo,
+            eveniet consequuntur in qui aut aliquid!</p>
+    </div>
+
+    <div class="container2">
+        <h1>Container2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus animi dolor qui numquam a odit vero quia quod in?</p>
+    </div>
+
+    <div class="circle">
+        
+    </div>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Our Products</h1>
+        <h5>Store</h5>
+        <h5>Pen</h5>
+        <h5>Pin</h5>
+        <h5>Flower</h5>
+        <h5>Mirror</h5>
+
+    </div> -->
+
+    <div class="container2">
+        <h1>This is Container2</h1>
+        <p>This is Paragraph</p>
+    </div>
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+
+/* .container1 {
+    height: 200px;
+    width: 300px;
+    background-color: cadetblue;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px; 
+    margin-left: 20px;  
+}
+
+
+.container1 >h1{
+    padding: 20px;
+}
+
+.container1 > p{
+    padding: 20px;
+}
+ */
+
+
+
+/* --------------------- */
+
+
+/* .container2 {
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+} */
+
+
+
+/* .container2 > h1 {
+    padding: 20px;
+
+}
+
+
+.container2 > p{
+    padding: 20px;
+} */
+
+
+
+
+/* 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 200px;
+    width: 300px;
+    background-color: violet;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 500px;
+    content:icon;
+} */
+
+
+
+
+
+/* *{
+    padding: 20px;
+} */
+
+
+/* .container2 {
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: yellow;
+}  */
+
+
+
+
+/* .container2 {
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: yellow;
+    margin: 100px;
+}  */
+
+
+/* .container2 { */
+    /* height: 20px;
+    width: 30px; */
+    /* padding: 10px ; */
+    /* padding-left: 30px; */
+
+/* } */
+
+/* .container2 {
+    height: 200px;
+    width: 300px;
+    border-width: 20px;
+    border-style: dashed;
+    border: color(srgb rgb(126, 50, 50) green blue);
+
+} */
+
+/* .container2 {
+    height: 200px;
+    width: 300px;
+    /* border-width: 20px;
+    border-style: dashed;
+    border: color(srgb rgb(126, 50, 50) green blue); */
+    /* border: 20px dashed black;
+    border-radius: 50px; }*/
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -=-------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- Task -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+
+<body>
+    <div class="container">
+        <button>Phone</button>
+        <button>Charger</button>
+        <button>Headset</button>
+        <button>PowerBank</button>
+        <button>Sim</button>
+        <button>Cable</button>
+    </div>
+
+
+
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background: rgb(3, 206, 111);
+    
+}
+
+.container {
+    width: 300px;
+    
+}
+
+
+.container {
+      background-color:violet;
+      margin-top: 20px;
+      margin-left: 30px;
+      border-radius: 40px;
+      padding: 40px;
+      box-shadow: inset blue;
+      justify-content: center;
+      align-items: center;
+      
+}
+
+/* .container > button{
+    padding: 20px;
+} */
+
+
+.container > button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: normal;
+      text-transform: uppercase;
+      justify-content: center;
+      align-items: center;
+}
+
+.container > button:hover{
+    background-color: seagreen;
+}
+
+
+
+
+.box {
+    height: 300px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- Border Property -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+</html>
+
+
+
+
+.container {
+    height: 200px;
+    width: 300px;
+    border: 2px solid red;
+    margin: 30px;
+    background-color: red;
+    box-sizing: border-box;
+    /* border-width: 40px; */
+    /* border-width: 20px 40px 60px 80px; */
+    /* border-style: outset; */
+     /* border-top-style: solid;
+     border-right-style: dashed;
+     border-bottom-style: dotted;
+     border-left-style: double; */
+     /* border-color: black; */
+     /* border-top-color: black;
+     border-right-color: rgb(224, 220, 220);
+     border-bottom-color: rgb(224, 15, 15);
+     border-left-color: rgb(67, 15, 209); */
+
+
+     /* border-radius: 30px  50%; */
+     /* border-top-left-radius:30px ;
+     border-top-right-radius: 50em; */
+
+     /* border-top: 5px solid red;
+     border-right: 10px dashed blue;
+     border-bottom: 3px double black;
+     border-left: 2px dotted green; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------ -->
+
+
+
+
+
+
+
+
+<!-- Chess -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+.container1{
+    height: 300px;
+    width: 400px;
+    border: 3px solid red;
+}
+
+.container1 > .box1{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+}
+.container1 > .box2{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    display: flex;
+    
+}
+.container1 >.box3{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(248, 247, 245);
+    display: flex;
+}
+.container1 >.box4{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(3, 3, 3);
+    display: flex;
+}
+.container1 >.box5{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(250, 248, 246);
+    display: flex;
+}
+.container1 >.box6{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+}
+.container1 >.box7{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(253, 252, 251);
+    display: flex;
+}
+.container1 >.box8{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(10, 10, 10);
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- Display -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+
+            </div>
+            <div class="box3">
+
+            </div>
+            <div class="box4">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+.outer > .inner{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+}
+
+
+.inner>.box1 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    display: inline;
+}
+.inner>.box2 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    background-color: rgb(16, 17, 17);
+    display: inline;
+}
+.inner>.box3 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    /* display: inline; */
+}
+.inner>.box4 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    background-color: rgb(7, 7, 7);
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------- -->
+
+
+
+
+
+
+<!-- Box -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box15</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    height: 500px;
+    border: 3px dotted blue;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    justify-content: space-between;
+    
+}
+
+.container > .box {
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    /* display: flex; */
+}
+
+
+
+
+<!-- -------------------------------------------------- -->
+
+
+
+
+<!--Nav Bar   -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="card">
+            <h1>Twitter</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia laboriosam illum dolore alias beatae similique dicta veritatis ducimus numquam ad!</p>
+            <button>Read More</button>
+        </div>
+        <div class="card">
+            <h1>Twitter</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia laboriosam illum dolore alias beatae similique dicta veritatis ducimus numquam ad!</p>
+            <button>Read More</button>
+        </div>
+        <div class="card">
+            <h1>Twitter</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia laboriosam illum dolore alias beatae similique dicta veritatis ducimus numquam ad!</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer .card {
+    height: 300px;
+    width: 260px;
+    border: 2px solid black;
+}
+
+
+.outer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- Overflow -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <p>Agreement</p>
+            <h3>Terms of condition</h3>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perferendis quis placeat illo illum
+                deleniti officiis quod at laborum iste sunt, voluptate aperiam. Culpa qui beatae debitis amet. Eum at
+                nostrum aspernatur odit consequuntur? Tempora labore fugiat voluptatibus unde omnis in perferendis,
+                doloremque numquam eligendi ex vero deleniti explicabo quis a dolore inventore sed corporis nobis.
+                Tenetur ratione dignissimos odit neque commodi enim placeat voluptates dolores velit amet provident
+                magni modi mollitia, accusamus explicabo quasi! Perferendis sapiente aliquid illo dicta inventore animi
+                neque ad pariatur possimus! Eius quae neque saepe atque, praesentium, harum aperiam velit ut enim, quam
+                laborum esse optio exercitationem quo commodi accusantium laboriosam quod error debitis quis placeat
+                recusandae? Eos ipsa officiis ex nam consectetur accusamus omnis iure laudantium quisquam commodi,
+                voluptatibus ratione ipsam maiores molestiae temporibus. Quis doloremque debitis voluptates ex commodi
+                tempore ducimus nemo sapiente exercitationem eum, harum quia ad iure vel deserunt laborum similique
+                natus dignissimos nisi a officiis necessitatibus at. Sapiente fuga, autem explicabo nihil placeat
+                eveniet reiciendis incidunt nemo! Cumque iusto atque sunt, reiciendis, eum, dolores tempora quos
+                distinctio quidem vitae labore error odio obcaecati. At maxime, voluptatibus sed sequi molestiae saepe!
+                Ut culpa cumque molestiae, atque, nemo minima quod porro provident nesciunt expedita quaerat ad, illum
+                numquam eaque esse praesentium cum maiores maxime quas commodi. Assumenda cum sapiente alias! Excepturi,
+                architecto itaque beatae quae molestias ab vitae voluptatum cumque tempora repudiandae ipsum veniam eos,
+                nostrum, nemo dolore temporibus minima. Eligendi magni, iusto id, quos ea sunt totam ab earum maxime est
+                hic inventore neque incidunt omnis ullam, fugiat fuga! Aperiam cupiditate ut velit veritatis quae
+                suscipit asperiores commodi optio doloremque placeat, accusamus quibusdam nemo ullam nesciunt.
+                Asperiores quasi exercitationem veniam assumenda, dolor natus obcaecati sapiente quam, dolore
+                consectetur recusandae doloribus sequi! Voluptatem minus esse itaque! Eius similique explicabo culpa
+                consequatur tempora.</p>
+
+            <div class="bottom">
+                <form action="">
+                    <input type="checkbox" name="" id="">
+                    <button>Agree</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.outer {
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inner {
+    height: 400px;
+    width: 500px;
+    border: 3px solid black;
+    overflow: auto;
+}
+
+.inner > p{
+    border: 2px solid black;
+    width: 100%;
+}
+
+.inner >h3{
+    display: flex;
+    justify-content: center;
+}
+
+#p1{
+    font-size: 20px;
+    padding: 30px;
+    
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    
+    background-color: rgb(14, 130, 233);
+}
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------- -->
+
+
+
+
+<!-- Flex--------------- -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <!-- <div class="outer">
+        <div class="inner">
+            <h1>Logo</h1>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact Us</p>
+            <p>login</p>
+            <p>Signup</p>
+        
+        
+        </div>
+
+    </div> -->
+
+
+    <div class="outer">
+        <div class="inner1">
+            <h1>This is Heading</h1>
+        </div>
+        <div class="inner2">
+            <h1>This is Heading</h1>
+        </div>
+        <div class="inner3">
+            <h1>This is Heading</h1>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+/* 
+.outer >.inner {
+    display: flex;
+
+    flex-direction: column-reverse;
+} */
+.outer >.inner {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: aqua;
+}  
+/* .outer >.inner {
+    height: 100vh;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    background-color: aqua;
+} */
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.outer{
+    display: flex;
+    height: 300px;
+}
+
+.inner1{
+    flex-basis: 33%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+.inner2{
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(111, 10, 226);
+}
+.inner3{
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 230, 18);
+}
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- Overflow--------------- -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet doloremque voluptate et neque magnam
+                libero minima cumque praesentium quam vitae qui sapiente, similique ab. Quasi unde quaerat harum veniam,
+                earum ex voluptas nemo voluptates ea aliquam voluptatum repellendus itaque. Voluptatibus molestias
+                laboriosam quae velit blanditiis asperiores ipsum voluptates dolores cupiditate doloribus, odio error ex
+                recusandae distinctio. Ab nam at ex, iste nostrum distinctio soluta. Nemo illo id eligendi est qui
+                molestiae a excepturi laboriosam earum quidem, quo consequatur magni voluptatibus quae quisquam ullam
+                eius fugit minus velit. Rem assumenda quibusdam iusto ratione ab laboriosam eaque culpa, sequi debitis,
+                aperiam autem ad tenetur natus fugiat odio quod dignissimos vitae aliquid! Culpa nesciunt placeat quod
+                laudantium voluptates. Quos animi quasi, obcaecati officia sit ratione cupiditate dicta iure excepturi
+                non qui facere cumque labore molestias eaque, quisquam saepe, porro rerum dolor itaque. Rerum voluptatem
+                repellat aperiam ab sunt saepe eum iusto fuga quia, quas, consequatur illum mollitia, labore maiores
+                minus. Amet ex voluptatem alias facilis perspiciatis delectus perferendis voluptatum? Consequuntur sed
+                modi atque iste fuga numquam rerum porro temporibus dolore nesciunt, eaque nemo assumenda vero at
+                blanditiis similique maxime nam corporis ut a neque quibusdam harum ipsum. Aliquid quis odio excepturi
+                laboriosam.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.outer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.inner{
+    height: 300px;
+    width: 400px;
+    overflow: auto;
+    border: 3px solid black;
+}
+
+
+
+
+
+
+
+<!-- --------------------------------------------------------------------------------------- -->
+
+
+
+
+<!-- CSK Task -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Property</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="image1">
+        </div>
+        <div class="image2">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image3">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image4">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image5">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image6">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image7">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image8">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image9">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image10">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image11">
+            <!-- <h1>CSK</h1> -->
+        </div>
+        <div class="image12">
+            <!-- <h1>CSK</h1> -->
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.image1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    background-image: url(https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 
+.image1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    background-image: url();
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+.image2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image3 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/935013/pexels-photo-935013.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image4 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/19298338/pexels-photo-19298338/free-photo-of-sports-cars-during-race.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image5 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/108160/pexels-photo-108160.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image6 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/3954783/pexels-photo-3954783.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image7 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/15075075/pexels-photo-15075075/free-photo-of-red-racing-car-on-race-track.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image8 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/14832852/pexels-photo-14832852.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.image9 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/26447287/pexels-photo-26447287/free-photo-of-bmw-e36-in-motorsport-event.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.image10 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/9643708/pexels-photo-9643708.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.image11 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/11743489/pexels-photo-11743489.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.image12 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/27696623/pexels-photo-27696623/free-photo-of-a-car-is-parked-in-a-garage-with-other-cars.png?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+<!-- ---------------------------------------------- -->
+
+
+
+
+
+<!-- ------Positionss -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    
+
+    <div class="outer">
+        <div class="inner">
+            <div class="box1">box1</div>
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+            <div class="box4">box4</div>
+            <div class="box5">box5</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.outer{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+
+.inner{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+
+    position: relative;
+    
+}
+
+
+.box1{
+    height: 60px;
+    width: 60px;
+    border: 2px solid black;
+    background-color: aliceblue;
+
+
+    position: absolute;
+
+
+}
+.box2{
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    background-color: blue;
+    position: absolute;
+
+    right: 0px;
+}
+.box3{
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    background-color: green;
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+}
+.box4{
+    height: 90px;
+    width: 90px;
+    border: 2px solid black;
+    background-color: orange;
+    position: absolute;
+
+    left: 0px;
+    bottom: 0px;
+}
+.box5{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: yellow;
+    position: absolute;
+
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+<!-- ------------------------------------------------------------------------- -->
+
+
+
+<!-- Animation -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="box"></div>
+        </div>
+        <div class="inner2">
+            <div class="box2"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.inner{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    /* transform: translate(); */
+    animation: movingBox 0.50s ease-in-out ;
+    /* animation-direction: alternate; */
+    animation-fill-mode:both;
+
+    /* transform: translate(300px); */
+
+    /* transform: translate(300px,300px); */
+    /* transform: translate(0px,300px); */
+}
+
+@keyframes movingBox{
+
+    /* 0%{
+        transform: translate(0,0);
+    }
+
+    25%{
+        transform: translate(300px,0);
+    }
+    50%{
+        transform: translate(300px,300px);
+    }
+    75%{
+        transform: translate(0,300px);
+
+
+
+    /* } */
+    from { 
+        transform: translate(300px); 
+    } 
+    to { 
+        transform: translate();
+     }
+
+
+
+
+} 
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- Image season Task -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="box" id="box1"><h1>Winter</h1></div>
+        <div class="box" id="box2"><h1>Sea</h1></div>
+        <div class="box" id="box3"><h1>Garden</h1></div>
+        <div class="box" id="box4"><h1>Sun Set</h1></div>
+        <div class="box" id="box5"><h1>Ocean</h1></div>
+        <div class="box" id="box6"><h1>Summer</h1></div>
+        <div class="box" id="box7"><h1>Spring</h1></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 600px;
+    border: 2px solid black;
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: 300px 300px 300px;
+    /* grid-template-rows: 200px; */
+    justify-content: center;
+    /* grid-template-rows: 100px 200px; */
+    /* grid-auto-rows: 80px; */
+    /* align-content: center; */
+    
+}
+
+.box{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#box1{
+    grid-row: span 2;
+}
+
+
+#box1{
+    background-image: url(https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+}
+
+#box2{
+    background-image: url(https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+}
+
+#box3{
+    background-image: url(https://images.pexels.com/photos/147640/pexels-photo-147640.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+    
+}
+
+#box4{
+    grid-column: span 2;
+    background-image: url(https://images.pexels.com/photos/269583/pexels-photo-269583.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 200% 200%;
+    
+}
+
+#box5{
+    background-image: url(https://images.pexels.com/photos/2583833/pexels-photo-2583833.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+}
+
+#box6{
+    background-image: url(https://images.pexels.com/photos/27868697/pexels-photo-27868697/free-photo-of-sunflowers-in-a-field-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+}
+
+#box7{
+    background-image: url(https://images.pexels.com/photos/16372800/pexels-photo-16372800/free-photo-of-spring-pink-tree-blossoms.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+}
+
+
+
+h1{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* background-color: aqua; */
+    /* align-content: center; */
+}
+
+/* .box :hover{
+    
+} */
+
+
+
+
+
+
+<!-- --------------------------------------------------------------- -->
+
+
+
+<!-- Position---sticky and fixed -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pratice.css">
+</head>
+<body>
+    
+    <div class="one">
+
+    </div>
+    <div class="two">
+
+    </div>
+    <div class="three">
+        <button>Click Me</button>
+
+    </div>
+    <div class="four">
+
+    </div>
+    <div class="five">
+
+    </div>
+</body>
+</html>
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.one{
+    height: 100px;
+    width: 100%;
+    /* position: fixed; */
+    /* top: 0%; */
+    background-color: brown;
+}
+.two{
+    height: 200px;
+    background-color: rgb(131, 10, 245);
+}
+.three{
+    height: 300px;
+    background-color: rgb(219, 241, 18);
+}
+.four{
+    height: 400px;
+    background-color: rgb(8, 132, 233);
+}
+.five{
+    height: 500px;
+    background-color: rgb(8, 8, 8);
+}
+
+.three >button{
+    top: 200px;
+    bottom: 0px;
+    position: sticky;
+}
+
+
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

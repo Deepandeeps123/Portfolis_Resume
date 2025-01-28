@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 400px;
+    background-color: blue;
+    display: flex;
+}
+
+.left {
+    flex-basis: 50%;
+    background-color: brown;
+    text-align: center;
+    align-items: center;
+}
+
+.middle {
+    flex-basis: 50%;
+    background-color: tomato;
+    text-align: center;
+}
+
+.right {
+    flex-basis: 50%;
+    background-color: darkmagenta;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0;
+    /* box-sizing: border-box; */
+    /* Used to between all the side border space */
+
+}
+
+/* padding used to inside the room(space) */
+/* between them used margin(space) */
+/* padding give all side space */
+
+.container1{
+    height: 250px;
+    width: 600px;
+    background-color: blue;
+    border: 2px solid red;
+    /* padding: 40px; */
+    /* padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 40px; */
+
+
+    /* give in single padding */
+    /* 3 ---Value----top,(both-right,left),bottom */
+    /* 2 value-------(both top,bottom) , (both left and right) */
+    /* 1 value---(all the value same size) */
+
+    padding: 10px 15px 50px;
+}
+
+
+
+.container2{
+    height: 250px;
+    width: 600px;
+    background-color: sandybrown;
+    border: 2px solid black;
+}

@@ -1,0 +1,47 @@
+/* h1
+{
+    color: green;
+} */
+
+
+/* descendent selector */
+
+.container h1{
+    color: blue;
+}
+
+
+ /* .container > h1{
+    color: cadetblue;
+ } */
+
+
+/* Direct child(>) only color apply in container 3 only.... */
+
+/* .container3 > h1{
+    color: red;
+} */
+
+
+/* adjacent sibiling selector */
+/* .container4 > #para1 {
+    color: blueviolet;
+} */
+
+/* .container4 > #para1 +p{
+    color: chartreuse;
+}
+
+#p1 */
+
+
+
+
+
+/* general sibling selector(~) */
+/* .container4 > #para1 ~ p{
+    color: darkorchid;
+} */
+
+
+

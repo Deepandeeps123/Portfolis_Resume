@@ -1,0 +1,20 @@
+.box{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    animation: moving  1s ease infinite;
+}
+
+@keyframes moving{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(300px);
+    }
+}

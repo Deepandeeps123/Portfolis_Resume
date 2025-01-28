@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    /* remove the space */
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+
+.container1  {
+    height: 200px;
+    width: 300px;
+    background-color: antiquewhite;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+
+.container2 {
+    height: 200px;
+    width: 300px;
+    background-color: blue;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    border-width: 3px;
+    border-style: dashed;
+    border-radius: 30px;
+    
+}
+
+
+.container1 >h2 ,.container2 > h2{
+    text-transform: uppercase;
+}
+
+
+.square{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+
+.square1{
+    height: 300px;
+    width: 300px;
+    border: 30px solid blue;
+    border-radius: 2px;
+    box-shadow: 2px;
+    border-style: inset;
+}

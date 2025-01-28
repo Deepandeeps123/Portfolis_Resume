@@ -1,0 +1,38 @@
+a[href]
+{
+    color: red;
+}
+
+a[target]
+{
+    color: aqua;
+}
+
+
+a[target="_blank"]
+{
+    color: black;
+}
+
+
+/* user anghor tag */
+
+input[type="text"]
+{
+    background-color: brown;
+}
+
+input[type="tel"]
+{
+    background-color: blue;
+}
+
+input[type="password"]
+{
+    background-color: chocolate;
+}
+
+input[type="submit"]
+{
+    color: turquoise;
+}

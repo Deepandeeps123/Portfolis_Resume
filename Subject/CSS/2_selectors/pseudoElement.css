@@ -1,0 +1,89 @@
+/* .container > p{
+    font-size: 30px;
+} */
+
+/* first letter */
+.container > p::first-letter{
+    font-size: 40px;
+    color: rgb(10, 10, 10);
+}
+
+
+/* -------------------------------------------------- */
+
+/* 2.First line */
+
+.container > p::first-line{
+    font-size: 20px;
+    background-color: green;
+    /* color: tomato; */
+}
+
+/* --------------------------------------------- */
+
+
+/* 3...Selection */
+/* In output select or copy the para it can change the color */
+
+::selection {
+    background-color: black;
+    color: green;
+}
+
+/* -------------------------------------------------- */
+
+
+
+/* 4..marker */
+
+
+/* .container2 >ul>li{
+    color: red;
+} */
+
+/* 
+.container2 >ul>li::marker{
+    color: red;
+} */
+
+.container2 >ul>li:nth-child(2n){
+    color: red;
+}
+
+
+.container2 > ul> li:nth-child(2n)::marker{
+     color: red;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* 5.Before */
+
+.container2 >h2::before{
+    content : "*";
+    color: red;
+}
+
+
+/* .container2 >h2::Before{
+    content: "Hello";
+} */
+
+
+/* --------------------------------------------------- */
+
+
+/* 6.After */
+
+
+.container2 > h2::After{
+    content: "&&";
+    color: red;
+}
+
+
+
+
+/* ----------------------------------------------- */

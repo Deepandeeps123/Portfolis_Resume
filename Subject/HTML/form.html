@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!--Form Taking the user data -->
+    <h1>Form Tag</h1>
+    <!-- In name tag click show the previous name to enter to not come means uses form tag(autocomplete---OFF) -->
+    <!-- fieldset--- It is used to table in user input -->
+     <!-- legend-- It is used Table attach with the Name -->
+    <!-- textarea---any size of the box -->
+    <!-- label,input -->
+     <!-- select -- option,optgroup-->
+     <!-- label atribute--for(ue) and input also insert --id (ue).It is used to Click the user name it show dark line -->
+    <!-- input ----type----- text,email,password,submit,button--(reset),ramge,ratio-->
+     <!--input attribute-- type,id,placeholder(inside the input box --show any name),name(To Store the Data in https link)
+value--Default value Store in the box(just Know),minlength,maxlength(only type letter in given number),required,checkbox,ratio-->
+    <form action="" autocomplete="off ">
+
+    <fieldset >
+        <legend>User_Information</legend>
+
+        <label for="uname">User Name</label>
+        <input type="text" id="uname" placeholder="Enter your name" name="User_name" value=""  maxlength="10" ><br><br>
+
+        <label for="uemail">User Email</label>
+        <input type="email" id="uemail" placeholder="Enter your email" name="User_email" ><br><br>
+
+        <label for="upass">Password</label>
+        <input type="password" 
+        name="User_password"
+         id="upass" 
+         placeholder="Enter your password"
+         minlength="6"
+         ><br><br>
+
+    </fieldset>
+
+     <fieldset>
+        <legend>Password_Information</legend>
+
+        <label for="uage">User_age</label>
+        <input type="number" name="User_age" id="uage" ><br><br>
+
+        <label for="phno">Phone_no</label>
+        <input type="tel" name="Phone_no" id="phno"><br><br>
+
+        <label for="uadd">Address</label><br>
+        <textarea name="useraddress" id="uadd" rows="10" cols="30"></textarea><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Timing</legend>
+
+        <label for="udate">Date</label>
+        <input type="date" name="date" id="udate"><br><br>
+
+        <label for="utime">Time</label>
+        <input type="time" name="time" id="utime"><br><br>
+
+        <label for="uweek">Week</label>
+        <input type="week" name="Week" id="uweek"><br><br>
+
+        <label for="umonth">Month</label>
+        <input type="month" name="Month" id="umonth" required >
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Checkbox and Radio</legend>
+<!-- This value is used to store the value http -->
+        <input type="checkbox" name="sub1" id="html" value="Html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="sub2" id="css" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="sub3" id="javascript" value="javascript">
+        <label for="javascript">JAVASCRIPT</label><br><br>
+
+
+
+
+        <label for="">Select Gender</label><br>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label><br><br>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br><br>
+
+        <input type="radio" name="other" id="other" value="other">
+        <label for="other">Other</label>
+
+
+
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Select Option</legend>
+
+        <label for="">Select Subject</label><br><br>
+
+        <select name="" id="">
+
+        <optgroup label="front-end">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JAVASCRIPT">JAVASCRIPT</option>
+        </optgroup>
+
+        <optgroup label="back-end">
+            <option value="Python">PYTHON</option>
+            <option value="JAVA">JAVA</option>
+            <option value="C++">C++</option>
+        </optgroup>
+
+        <optgroup label="database">
+            <option value="SQL">SQL</option>
+            <option value="Oracle SQL">Oracle SQL</option>
+            <option value="MySQL">MySQL
+
+            </option>
+        </optgroup>
+        </select>
+
+        <label for="">Salary</label>
+        <input type="range" name="sal" id="" min="100000" max="500000">
+    </fieldset>
+
+
+
+
+    <fieldset>
+        <legend>Signup</legend>
+        <input type="submit" value="Signup">
+         <input type="reset" value="Reset">
+         <!-- <button type="reset">Reset</button> -->
+    </fieldset>
+         <!-- <input type="submit" value="Signup">
+         <input type="reset" value="Reset"> -->
+         <!-- <button type="reset">Reset</button> -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap'); */
+
+
+
+#p1 {
+    font-size: 25px;
+}
+
+
+/* bold */
+
+#p1 {
+    font-weight: bold;
+}
+
+
+/* font family */
+
+
+/* google font */
+/* get emberred code */
+/* import ---no style only copy the imort in css top */
+
+/*  same link   down copy font family */
+
+
+/* #p1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+#p1{
+    font-family: "Doto", sans-serif;
+}
+
+
+
+/* * {
+    font-family: "Doto", sans-serif;
+
+} */

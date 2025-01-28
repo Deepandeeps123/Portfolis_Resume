@@ -1,0 +1,200 @@
+.container > button {
+    background-color: aqua;
+    color: red;
+}
+
+
+/* button {
+    color: red;
+    background-color: aqua;
+} */
+
+
+
+
+/* 1. Hover */
+
+
+.container > button:hover {
+    color: rgb(31, 233, 233);
+    background-color: brown;
+}
+
+
+ .container h1:hover {
+    color: blue;
+}
+
+
+/* .container p:hover {
+    color: chartreuse;
+} */ 
+
+
+
+
+
+/* ---------------------------------------------------------- */
+
+/* 2.Active */
+/* Click the button colour cahange */
+
+.container > button:active {
+    background-color: black;
+    color: rgb(11, 99, 175);
+}
+
+/* -------------------------------------------------------------- */
+
+/* 3. First of Type */
+
+/* it take all */
+
+
+/* .container2  h1{
+    color: green;
+} */
+
+
+/* .container2 > h1{
+    color: red;
+} */
+
+
+
+.container2 > h1:first-of-type{
+    color: red;
+}
+
+.container2 > p:first-of-type {
+    color: chocolate;
+}
+
+
+
+
+/* ------------------------------------------ */
+
+/* 4.Last of type*/
+
+
+.container2 > h1:last-of-type{
+    color: yellow;
+}
+
+.container2 > p:last-of-type{
+    color: turquoise;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+
+/* 5..First child */
+
+
+
+/* it will select the h1 ,beacase  it is first child */
+.container3 > p:first-child{
+    color: cadetblue;
+}
+
+
+
+.container3 > h1:first-child{
+    color: aquamarine;
+}
+
+
+
+/* 6...Last child */
+
+.container3 > p:last-child{
+    color: blueviolet;
+}
+
+
+/* .container3 button:last-child{
+    color: blueviolet;
+} */
+
+
+
+.container3 > button:last-child {
+    color: blueviolet;
+}
+
+/* ----------------------------------------------------------- */
+/* 7. nth child */
+
+/* Select all list */
+
+
+/* .container4 li {
+      color: red;
+} */
+
+
+/* 
+.container4 >ul >li {
+    color: green;
+} */
+
+
+/* select the 2nd list colour */
+
+/* 
+.container4 >ul>li:nth-child(2){
+    color: blue;
+} */
+
+
+
+
+/* Print colour in even number */
+
+/* .container4 >ul >li:nth-child(2n){
+    color:yellow
+} */
+
+
+
+/*  */
+
+.container4 >ul>li:nth-child(2n+1){
+    color: green;
+}
+
+
+/* -------------------------------------- */
+
+/* 8.. visited*/
+
+/* .container4 > a:active {
+    color: black;
+} */
+
+
+
+/* .container4 > a:visited{
+    color: yellow;
+} */
+
+/* ------------------------------------------ */
+
+
+/* 9.Link */
+
+.container4 > a:link{
+    color: turquoise;
+}
+
+
+
+
+
+
+
+
+

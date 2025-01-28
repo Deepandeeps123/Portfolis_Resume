@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in Javascript</title>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box1,.box2{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Events in Javascript</h1>
+
+    <button id="btn">1</button>
+
+
+    <input type="text" onkeypress="console.log('Key press')" />
+
+    <button onclick="hello()">Addition of two numbers</button>
+
+
+
+    <form onsubmit="alert('Form submitted!'); return false;">
+        <input type="text" placeholder="Type something" />
+        <button type="submit">Submit</button>
+      </form>
+
+    <!-- <div class="box1" onmouseover="mouseOver()">
+
+    </div> -->
+
+    <script src="./Event.js"></script>
+</body>
+</html>

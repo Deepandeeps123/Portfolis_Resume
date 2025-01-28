@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header >h1{
+    background-color: hsl(0, 58%, 24%);
+    height: 30vh;
+}
+
+
+main  {
+    background-color: rgba(12, 51, 109,0.9);
+    height: 50vh;
+}
+
+footer >h3 {
+    background-color: tomato;
+    height: 30vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
